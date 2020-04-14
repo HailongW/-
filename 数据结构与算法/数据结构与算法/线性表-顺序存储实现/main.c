@@ -74,6 +74,45 @@ Status GetElem(sqlList L,int i, ElemType *e) {
 }
 
 //1.4 顺序表的删除
+/**
+ 初始条件:顺序表L已经存在，1≤i≤ListLength(L)
+ 操作结果:删除L的第i个数据元素,L的长度减1
+ */
+Status ListDelete(sqlList *L,int i) {
+    //线性表为空
+    if (L->length == 0) return ERROR;
+    //i值不合法判断
+    if (i<=1 || i > L->length + 1) return ERROR;
+    for (int j = i; j<L->length; j++) {
+        //被删除之后的元素向迁移
+        L->data[j-1] = L->data[j];
+    }
+    L->length--;
+    return OK;
+}
+
+
+//1.5 清空顺序表
+Status ClearList(sqlList *L){
+    L->length = 0;
+    return OK;
+}
+
+//1.6 判断顺序表清空
+/**
+ 初始条件：顺序线性表L已存在。操作结果：若L为空表，则返回TRUE，否则返回FALSE
+ */
+Status ListEmpty(sqlList L) {
+    if (L.length == 0)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+//1.7 获取顺序表长度
+int listLength(sqlList L) {
+    return L.length;
+}
 
 //1.8 顺序输出List
 /* 初始条件：顺序线性表L已存在 */
@@ -87,6 +126,35 @@ Status TraverseList(sqlList L){
     return OK;
 }
 
+//1.9 顺序表查找元素并返回位置
+/**
+ 初始条件:顺序表L已经存在
+ 操作结果：返回L中第1个与e满足关系的数据元素的位序
+ 若这样的数据元素不存在，则返回值为0
+ */
+int LocateElem(sqlList L,ElemType e) {
+    if (L.length == 0) return ERROR;
+    for (int i = 0; i<L.length; i++) {
+        if (L.data[i] == e) {
+            return i + 1;
+        }
+    }
+    return 0;
+    /** CC 老师的写法
+     int i;
+       if (L.length==0) return 0;
+       
+       for(i=0;i<L.length;i++)
+       {
+           if (L.data[i]==e)
+               break;
+       }
+     
+       if(i>=L.length) return 0;
+       return i+1;
+     */
+}
+
 
 
 int main(int argc, const char * argv[]) {
@@ -94,6 +162,7 @@ int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
     sqlList L;
     Status iStatus;
+    ElemType e;
     
     //顺序表的初始化
     iStatus = InitList(&L);
@@ -105,5 +174,24 @@ int main(int argc, const char * argv[]) {
     }
     printf("插入数据L长度：%d\n",L.length);
     TraverseList(L);
+    //顺序表获取元素
+    GetElem(L, 5, &e);
+    printf("顺序表L第5个元素的位置:%d\n",e);
+    //顺序表删除第2个元素
+    ListDelete(&L, 2);
+    printf("顺序表删除第%d个元素,长度length为%d\n",2,L.length);
+     TraverseList(L);
+    //查找对应元素e 的位置
+    int index = LocateElem(L, 1);
+    printf("顺序表L中数字1的位置:%d\n",index);
+    
+    //清空顺序表
+    ClearList(&L);
+    printf("清空后,L.length = %d\n",L.length);
+    
+    //判断顺序表是否为空
+    iStatus = ListEmpty(L);
+    printf("L是否空：i=%d(1:是 0:否)\n",iStatus);
+
     return 0;
 }
