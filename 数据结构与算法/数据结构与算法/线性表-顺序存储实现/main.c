@@ -168,7 +168,7 @@ int main(int argc, const char * argv[]) {
     iStatus = InitList(&L);
     printf("初始化L后：L.length = %d\n",L.length);
     
-    //顺序表数据插入 -- 头插法
+    //顺序表数据插入
     for (int j = 1; j<=5; j++) {
         iStatus = ListInsert(&L, 1, j);
     }
