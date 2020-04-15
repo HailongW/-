@@ -82,10 +82,14 @@ Status GetElem(LinkList L, int i, ElemType *e) {
 }
 
 //单链表删除元素
+/**
+ 初始条件:链式线性表L已经存在
+ 操作结果:删除链表第i个位置的元素，并用e返回其值，L的长度减1
+ */
 
 
 /**
- 初始条件:顺序线性表L已存在
+ 初始条件:链式线性表L已存在
  操作结果:依次对L的每个元素输出
  */
 Status ListTraverse(LinkList L) {
@@ -109,5 +113,12 @@ int main(int argc, const char * argv[]) {
     ElemType e;
     iStatus = InitList(&L);
     printf("L 是否初始化成功?(0:失败,1:成功) %d\n",iStatus);
+    
+    //单链表插入数据
+    for (int i = 1; i<5; i++) {
+        ListInsert(&L, i, i);
+    }
+    ListTraverse(L);
+    
     return 0;
 }
