@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC7A25B3244F198B00B07308 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BC7A25B2244F198B00B07308 /* main.c */; };
+		BC7A25BE244F19AE00B07308 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BC7A25BD244F19AE00B07308 /* main.c */; };
 		BCDB9B412443794C00427096 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDB9B402443794C00427096 /* main.c */; };
 		BCDB9B672445970700427096 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDB9B662445970700427096 /* main.c */; };
 		BCDB9B7224495A4100427096 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDB9B7124495A4100427096 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BC7A25AE244F198B00B07308 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BC7A25B9244F19AE00B07308 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		BCDB9B3B2443794C00427096 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +63,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC7A25B0244F198B00B07308 /* 线性表-双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性表-双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7A25B2244F198B00B07308 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BC7A25BB244F19AE00B07308 /* 线性表-双向循环链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性表-双向循环链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7A25BD244F19AE00B07308 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		BCDB9B3D2443794C00427096 /* 数据结构与算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "数据结构与算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDB9B402443794C00427096 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		BCDB9B642445970700427096 /* 线性表-链式存储实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性表-链式存储实现"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +76,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC7A25AD244F198B00B07308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7A25B8244F19AE00B07308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCDB9B3A2443794C00427096 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +114,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC7A25B1244F198B00B07308 /* 线性表-双向链表 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A25B2244F198B00B07308 /* main.c */,
+			);
+			path = "线性表-双向链表";
+			sourceTree = "<group>";
+		};
+		BC7A25BC244F19AE00B07308 /* 线性表-双向循环链表 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A25BD244F19AE00B07308 /* main.c */,
+			);
+			path = "线性表-双向循环链表";
+			sourceTree = "<group>";
+		};
 		BCDB9B342443794C00427096 = {
 			isa = PBXGroup;
 			children = (
 				BCDB9B3F2443794C00427096 /* 数据结构与算法 */,
 				BCDB9B652445970700427096 /* 线性表-链式存储实现 */,
 				BCDB9B7024495A4100427096 /* 线性表-单向循环链表 */,
+				BC7A25B1244F198B00B07308 /* 线性表-双向链表 */,
+				BC7A25BC244F19AE00B07308 /* 线性表-双向循环链表 */,
 				BCDB9B3E2443794C00427096 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +148,8 @@
 				BCDB9B3D2443794C00427096 /* 数据结构与算法 */,
 				BCDB9B642445970700427096 /* 线性表-链式存储实现 */,
 				BCDB9B6F24495A4100427096 /* 线性表-单向循环链表 */,
+				BC7A25B0244F198B00B07308 /* 线性表-双向链表 */,
+				BC7A25BB244F19AE00B07308 /* 线性表-双向循环链表 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +189,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BC7A25AF244F198B00B07308 /* 线性表-双向链表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7A25B6244F198B00B07308 /* Build configuration list for PBXNativeTarget "线性表-双向链表" */;
+			buildPhases = (
+				BC7A25AC244F198B00B07308 /* Sources */,
+				BC7A25AD244F198B00B07308 /* Frameworks */,
+				BC7A25AE244F198B00B07308 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "线性表-双向链表";
+			productName = "线性表-双向链表";
+			productReference = BC7A25B0244F198B00B07308 /* 线性表-双向链表 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BC7A25BA244F19AE00B07308 /* 线性表-双向循环链表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7A25BF244F19AE00B07308 /* Build configuration list for PBXNativeTarget "线性表-双向循环链表" */;
+			buildPhases = (
+				BC7A25B7244F19AE00B07308 /* Sources */,
+				BC7A25B8244F19AE00B07308 /* Frameworks */,
+				BC7A25B9244F19AE00B07308 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "线性表-双向循环链表";
+			productName = "线性表-双向循环链表";
+			productReference = BC7A25BB244F19AE00B07308 /* 线性表-双向循环链表 */;
+			productType = "com.apple.product-type.tool";
+		};
 		BCDB9B3C2443794C00427096 /* 数据结构与算法 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCDB9B442443794C00427096 /* Build configuration list for PBXNativeTarget "数据结构与算法" */;
@@ -191,6 +283,12 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = WHL;
 				TargetAttributes = {
+					BC7A25AF244F198B00B07308 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					BC7A25BA244F19AE00B07308 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					BCDB9B3C2443794C00427096 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -218,11 +316,29 @@
 				BCDB9B3C2443794C00427096 /* 数据结构与算法 */,
 				BCDB9B632445970700427096 /* 线性表-链式存储实现 */,
 				BCDB9B6E24495A4100427096 /* 线性表-单向循环链表 */,
+				BC7A25AF244F198B00B07308 /* 线性表-双向链表 */,
+				BC7A25BA244F19AE00B07308 /* 线性表-双向循环链表 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BC7A25AC244F198B00B07308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7A25B3244F198B00B07308 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7A25B7244F19AE00B07308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7A25BE244F19AE00B07308 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCDB9B392443794C00427096 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +366,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		BC7A25B4244F198B00B07308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC7A25B5244F198B00B07308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC7A25C0244F19AE00B07308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC7A25C1244F19AE00B07308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BCDB9B422443794C00427096 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -426,6 +582,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC7A25B6244F198B00B07308 /* Build configuration list for PBXNativeTarget "线性表-双向链表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7A25B4244F198B00B07308 /* Debug */,
+				BC7A25B5244F198B00B07308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7A25BF244F19AE00B07308 /* Build configuration list for PBXNativeTarget "线性表-双向循环链表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7A25C0244F19AE00B07308 /* Debug */,
+				BC7A25C1244F19AE00B07308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BCDB9B382443794C00427096 /* Build configuration list for PBXProject "数据结构与算法" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
