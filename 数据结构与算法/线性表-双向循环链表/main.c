@@ -8,6 +8,10 @@
 
 #include <stdio.h>
 
+
+typedef int status;
+typedef int ElemType;
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
